@@ -7,7 +7,7 @@ const App = () => {
 
   const fetchData = () => {
     setLoading(true);
-    fetch(`https://testapi.devtoolsdaily.com/users?offset=${pageNumber}`)
+    fetch(`https://testapi.devtoolsdaily.com/users?pageNumber=${pageNumber}`)
       .then((resp) => {
         return resp.json();
       })
